@@ -1,0 +1,3093 @@
+{
+  "status": "completed",
+  "dataset_name": "city_day.csv",
+  "total_records": 29531,
+  "regression": {
+    "status": "success",
+    "target": "target_PM2.5_next (Next-Day PM2.5 Forecast)",
+    "features": [
+      "PM2.5",
+      "PM2.5_lag1",
+      "PM2.5_lag2",
+      "PM2.5_roll3",
+      "PM10",
+      "NO2",
+      "SO2",
+      "CO",
+      "O3",
+      "month",
+      "day_of_week"
+    ],
+    "train_samples": 19715,
+    "test_samples": 4929,
+    "split_strategy": "Chronological (80% Train, 20% Test)",
+    "best_model": "Linear Regression",
+    "models_comparison": [
+      {
+        "model": "Linear Regression (Baseline)",
+        "mae": 16.24,
+        "rmse": 32.91,
+        "r2": 0.7944
+      },
+      {
+        "model": "Random Forest Regressor",
+        "mae": 16.49,
+        "rmse": 33.39,
+        "r2": 0.7884
+      }
+    ],
+    "feature_importances": {
+      "PM2.5": 0.7771,
+      "PM2.5_lag1": 0.0402,
+      "PM2.5_lag2": 0.0319,
+      "PM2.5_roll3": 0.0382,
+      "PM10": 0.0099,
+      "NO2": 0.0175,
+      "SO2": 0.0225,
+      "CO": 0.0244,
+      "O3": 0.0181,
+      "month": 0.0091,
+      "day_of_week": 0.011
+    },
+    "eval_curve": [
+      {
+        "index": 0,
+        "actual": 18.91,
+        "predicted": 25.39,
+        "error": 6.48
+      },
+      {
+        "index": 1,
+        "actual": 17.54,
+        "predicted": 22.59,
+        "error": 5.05
+      },
+      {
+        "index": 2,
+        "actual": 8.93,
+        "predicted": 22.93,
+        "error": 14.0
+      },
+      {
+        "index": 3,
+        "actual": 9.03,
+        "predicted": 16.64,
+        "error": 7.61
+      },
+      {
+        "index": 4,
+        "actual": 11.3,
+        "predicted": 15.93,
+        "error": 4.63
+      },
+      {
+        "index": 5,
+        "actual": 12.14,
+        "predicted": 16.29,
+        "error": 4.15
+      },
+      {
+        "index": 6,
+        "actual": 9.53,
+        "predicted": 15.51,
+        "error": 5.98
+      },
+      {
+        "index": 7,
+        "actual": 16.51,
+        "predicted": 13.1,
+        "error": 3.41
+      },
+      {
+        "index": 8,
+        "actual": 14.04,
+        "predicted": 19.35,
+        "error": 5.31
+      },
+      {
+        "index": 9,
+        "actual": 6.9,
+        "predicted": 18.66,
+        "error": 11.76
+      },
+      {
+        "index": 10,
+        "actual": 8.42,
+        "predicted": 14.22,
+        "error": 5.8
+      },
+      {
+        "index": 11,
+        "actual": 11.88,
+        "predicted": 14.6,
+        "error": 2.72
+      },
+      {
+        "index": 12,
+        "actual": 11.07,
+        "predicted": 15.12,
+        "error": 4.05
+      },
+      {
+        "index": 13,
+        "actual": 2.0,
+        "predicted": 14.04,
+        "error": 12.04
+      },
+      {
+        "index": 14,
+        "actual": 6.3,
+        "predicted": 7.85,
+        "error": 1.55
+      },
+      {
+        "index": 15,
+        "actual": 11.18,
+        "predicted": 9.58,
+        "error": 1.6
+      },
+      {
+        "index": 16,
+        "actual": 26.88,
+        "predicted": 15.61,
+        "error": 11.27
+      },
+      {
+        "index": 17,
+        "actual": 66.22,
+        "predicted": 27.17,
+        "error": 39.05
+      },
+      {
+        "index": 18,
+        "actual": 45.53,
+        "predicted": 60.32,
+        "error": 14.79
+      },
+      {
+        "index": 19,
+        "actual": 24.8,
+        "predicted": 49.19,
+        "error": 24.39
+      },
+      {
+        "index": 20,
+        "actual": 15.91,
+        "predicted": 36.98,
+        "error": 21.07
+      },
+      {
+        "index": 21,
+        "actual": 10.99,
+        "predicted": 28.98,
+        "error": 17.99
+      },
+      {
+        "index": 22,
+        "actual": 18.69,
+        "predicted": 20.44,
+        "error": 1.75
+      },
+      {
+        "index": 23,
+        "actual": 12.35,
+        "predicted": 24.63,
+        "error": 12.28
+      },
+      {
+        "index": 24,
+        "actual": 26.6,
+        "predicted": 19.49,
+        "error": 7.11
+      },
+      {
+        "index": 25,
+        "actual": 26.94,
+        "predicted": 29.43,
+        "error": 2.49
+      },
+      {
+        "index": 26,
+        "actual": 16.71,
+        "predicted": 29.57,
+        "error": 12.86
+      },
+      {
+        "index": 27,
+        "actual": 28.1,
+        "predicted": 23.02,
+        "error": 5.08
+      },
+      {
+        "index": 28,
+        "actual": 21.22,
+        "predicted": 32.52,
+        "error": 11.3
+      },
+      {
+        "index": 29,
+        "actual": 15.68,
+        "predicted": 25.7,
+        "error": 10.02
+      },
+      {
+        "index": 30,
+        "actual": 9.91,
+        "predicted": 24.56,
+        "error": 14.65
+      },
+      {
+        "index": 31,
+        "actual": 17.94,
+        "predicted": 18.97,
+        "error": 1.03
+      },
+      {
+        "index": 32,
+        "actual": 19.14,
+        "predicted": 25.35,
+        "error": 6.21
+      },
+      {
+        "index": 33,
+        "actual": 29.71,
+        "predicted": 25.1,
+        "error": 4.61
+      },
+      {
+        "index": 34,
+        "actual": 21.66,
+        "predicted": 33.2,
+        "error": 11.54
+      },
+      {
+        "index": 35,
+        "actual": 29.69,
+        "predicted": 28.14,
+        "error": 1.55
+      },
+      {
+        "index": 36,
+        "actual": 31.14,
+        "predicted": 33.75,
+        "error": 2.61
+      },
+      {
+        "index": 37,
+        "actual": 31.84,
+        "predicted": 39.18,
+        "error": 7.34
+      },
+      {
+        "index": 38,
+        "actual": 32.55,
+        "predicted": 38.98,
+        "error": 6.43
+      },
+      {
+        "index": 39,
+        "actual": 37.71,
+        "predicted": 39.0,
+        "error": 1.29
+      },
+      {
+        "index": 40,
+        "actual": 37.67,
+        "predicted": 42.98,
+        "error": 5.31
+      },
+      {
+        "index": 41,
+        "actual": 22.75,
+        "predicted": 42.05,
+        "error": 19.3
+      },
+      {
+        "index": 42,
+        "actual": 21.33,
+        "predicted": 32.3,
+        "error": 10.97
+      },
+      {
+        "index": 43,
+        "actual": 24.66,
+        "predicted": 29.97,
+        "error": 5.31
+      },
+      {
+        "index": 44,
+        "actual": 21.06,
+        "predicted": 33.78,
+        "error": 12.72
+      },
+      {
+        "index": 45,
+        "actual": 17.05,
+        "predicted": 29.32,
+        "error": 12.27
+      },
+      {
+        "index": 46,
+        "actual": 21.16,
+        "predicted": 26.02,
+        "error": 4.86
+      },
+      {
+        "index": 47,
+        "actual": 14.41,
+        "predicted": 29.02,
+        "error": 14.61
+      },
+      {
+        "index": 48,
+        "actual": 26.67,
+        "predicted": 23.16,
+        "error": 3.51
+      },
+      {
+        "index": 49,
+        "actual": 25.96,
+        "predicted": 30.68,
+        "error": 4.72
+      },
+      {
+        "index": 50,
+        "actual": 33.17,
+        "predicted": 30.93,
+        "error": 2.24
+      },
+      {
+        "index": 51,
+        "actual": 25.4,
+        "predicted": 38.45,
+        "error": 13.05
+      },
+      {
+        "index": 52,
+        "actual": 34.36,
+        "predicted": 33.71,
+        "error": 0.65
+      },
+      {
+        "index": 53,
+        "actual": 13.45,
+        "predicted": 37.26,
+        "error": 23.81
+      },
+      {
+        "index": 54,
+        "actual": 7.63,
+        "predicted": 23.68,
+        "error": 16.05
+      },
+      {
+        "index": 55,
+        "actual": 15.02,
+        "predicted": 17.42,
+        "error": 2.4
+      },
+      {
+        "index": 56,
+        "actual": 24.38,
+        "predicted": 20.62,
+        "error": 3.76
+      },
+      {
+        "index": 57,
+        "actual": 22.91,
+        "predicted": 25.22,
+        "error": 2.31
+      },
+      {
+        "index": 58,
+        "actual": 16.64,
+        "predicted": 27.94,
+        "error": 11.3
+      },
+      {
+        "index": 59,
+        "actual": 15.0,
+        "predicted": 24.4,
+        "error": 9.4
+      }
+    ],
+    "charts": [
+      "regression_actual_vs_predicted.png",
+      "regression_residuals.png"
+    ]
+  },
+  "classification": {
+    "status": "success",
+    "model_name": "Random Forest Classifier",
+    "features": [
+      "PM2.5",
+      "PM10",
+      "NO",
+      "NO2",
+      "NOx",
+      "NH3",
+      "SO2",
+      "CO",
+      "O3",
+      "Benzene",
+      "Toluene",
+      "Xylene"
+    ],
+    "classes": [
+      "Good",
+      "Moderate",
+      "Poor",
+      "Satisfactory",
+      "Severe",
+      "Very Poor"
+    ],
+    "class_distribution": {
+      "Moderate": 8829,
+      "Satisfactory": 8224,
+      "Poor": 2781,
+      "Very Poor": 2337,
+      "Good": 1341,
+      "Severe": 1338
+    },
+    "train_samples": 18637,
+    "test_samples": 6213,
+    "accuracy": 0.8004,
+    "precision": 0.806,
+    "recall": 0.8004,
+    "f1_score": 0.802,
+    "confusion_matrix": {
+      "labels": [
+        "Good",
+        "Moderate",
+        "Poor",
+        "Satisfactory",
+        "Severe",
+        "Very Poor"
+      ],
+      "matrix": [
+        [
+          273,
+          1,
+          1,
+          60,
+          0,
+          0
+        ],
+        [
+          4,
+          1778,
+          179,
+          242,
+          0,
+          5
+        ],
+        [
+          0,
+          88,
+          531,
+          5,
+          6,
+          65
+        ],
+        [
+          146,
+          249,
+          5,
+          1655,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          4,
+          1,
+          283,
+          47
+        ],
+        [
+          0,
+          3,
+          79,
+          0,
+          49,
+          453
+        ]
+      ]
+    },
+    "classification_report": {
+      "Good": {
+        "precision": 0.6453900709219859,
+        "recall": 0.8149253731343283,
+        "f1-score": 0.7203166226912929,
+        "support": 335.0
+      },
+      "Moderate": {
+        "precision": 0.8390750353940538,
+        "recall": 0.8052536231884058,
+        "f1-score": 0.8218165010399815,
+        "support": 2208.0
+      },
+      "Poor": {
+        "precision": 0.6645807259073843,
+        "recall": 0.7640287769784173,
+        "f1-score": 0.7108433734939759,
+        "support": 695.0
+      },
+      "Satisfactory": {
+        "precision": 0.8430973000509424,
+        "recall": 0.8049610894941635,
+        "f1-score": 0.8235879572032844,
+        "support": 2056.0
+      },
+      "Severe": {
+        "precision": 0.8372781065088757,
+        "recall": 0.844776119402985,
+        "f1-score": 0.8410104011887073,
+        "support": 335.0
+      },
+      "Very Poor": {
+        "precision": 0.7933450087565674,
+        "recall": 0.7756849315068494,
+        "f1-score": 0.7844155844155845,
+        "support": 584.0
+      },
+      "accuracy": 0.8004184773861258,
+      "macro avg": {
+        "precision": 0.770461041256635,
+        "recall": 0.8016049856175248,
+        "f1-score": 0.7836650733388044,
+        "support": 6213.0
+      },
+      "weighted avg": {
+        "precision": 0.8060480695499138,
+        "recall": 0.8004184773861258,
+        "f1-score": 0.8020355823568399,
+        "support": 6213.0
+      }
+    },
+    "feature_importances": {
+      "PM2.5": 0.2963,
+      "PM10": 0.2021,
+      "NO": 0.0535,
+      "NO2": 0.0405,
+      "NOx": 0.0449,
+      "NH3": 0.0344,
+      "SO2": 0.0426,
+      "CO": 0.1535,
+      "O3": 0.0531,
+      "Benzene": 0.0222,
+      "Toluene": 0.0391,
+      "Xylene": 0.0178
+    },
+    "charts": [
+      "classification_confusion_matrix.png"
+    ]
+  },
+  "clustering": {
+    "status": "success",
+    "optimal_k": 2,
+    "features": [
+      "PM2.5",
+      "PM10",
+      "NO",
+      "NO2",
+      "NOx",
+      "NH3",
+      "SO2",
+      "CO",
+      "O3",
+      "Benzene",
+      "Toluene",
+      "Xylene"
+    ],
+    "silhouette_score": 0.4758,
+    "candidate_scores": {
+      "2": 0.476,
+      "3": 0.467,
+      "4": 0.447,
+      "5": 0.27
+    },
+    "pca_variance_ratio": [
+      0.287,
+      0.151
+    ],
+    "cluster_profiles": [
+      {
+        "cluster_id": 0,
+        "record_count": 23976,
+        "percentage": 85.3,
+        "means": {
+          "PM2.5": 53.38,
+          "PM10": 96.07,
+          "NO": 11.53,
+          "NO2": 21.94,
+          "NOx": 23.6,
+          "NH3": 21.55,
+          "SO2": 11.38,
+          "CO": 1.21,
+          "O3": 32.66,
+          "Benzene": 2.12,
+          "Toluene": 5.13,
+          "Xylene": 2.05
+        }
+      },
+      {
+        "cluster_id": 1,
+        "record_count": 4132,
+        "percentage": 14.7,
+        "means": {
+          "PM2.5": 139.91,
+          "PM10": 248.64,
+          "NO": 49.64,
+          "NO2": 63.95,
+          "NOx": 78.06,
+          "NH3": 37.38,
+          "SO2": 31.22,
+          "CO": 8.14,
+          "O3": 44.37,
+          "Benzene": 9.09,
+          "Toluene": 25.57,
+          "Xylene": 6.8
+        }
+      }
+    ],
+    "sample_points": [
+      {
+        "pca_x": 0.21,
+        "pca_y": -0.49,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.3,
+        "pca_y": 0.05,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.7,
+        "pca_y": 0.19,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.24,
+        "pca_y": -0.29,
+        "cluster": 0
+      },
+      {
+        "pca_x": 4.3,
+        "pca_y": -2.55,
+        "cluster": 1
+      },
+      {
+        "pca_x": 3.48,
+        "pca_y": -2.67,
+        "cluster": 1
+      },
+      {
+        "pca_x": -0.25,
+        "pca_y": -0.51,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.23,
+        "pca_y": -0.71,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.73,
+        "pca_y": -0.2,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.33,
+        "pca_y": 0.25,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.08,
+        "pca_y": -0.85,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.56,
+        "pca_y": 0.83,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.81,
+        "pca_y": 0.1,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.36,
+        "pca_y": -0.2,
+        "cluster": 0
+      },
+      {
+        "pca_x": 3.97,
+        "pca_y": -2.68,
+        "cluster": 1
+      },
+      {
+        "pca_x": 0.67,
+        "pca_y": -1.01,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.39,
+        "pca_y": 0.25,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.66,
+        "pca_y": -0.11,
+        "cluster": 0
+      },
+      {
+        "pca_x": 2.29,
+        "pca_y": -1.13,
+        "cluster": 1
+      },
+      {
+        "pca_x": 0.42,
+        "pca_y": -1.45,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.95,
+        "pca_y": 0.28,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.75,
+        "pca_y": -0.96,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.47,
+        "pca_y": 0.53,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.44,
+        "pca_y": -0.07,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.7,
+        "pca_y": 0.73,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.73,
+        "pca_y": -0.05,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.82,
+        "pca_y": 1.39,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.15,
+        "pca_y": 2.84,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.84,
+        "pca_y": 0.39,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.02,
+        "pca_y": -0.1,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.58,
+        "pca_y": 0.35,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.24,
+        "pca_y": -0.03,
+        "cluster": 0
+      },
+      {
+        "pca_x": 8.09,
+        "pca_y": 2.7,
+        "cluster": 1
+      },
+      {
+        "pca_x": -2.01,
+        "pca_y": 0.36,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.46,
+        "pca_y": -1.12,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.41,
+        "pca_y": 0.34,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.05,
+        "pca_y": -0.69,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.3,
+        "pca_y": 0.22,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.81,
+        "pca_y": -0.83,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.31,
+        "pca_y": 0.2,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.06,
+        "pca_y": 0.19,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.47,
+        "pca_y": -0.87,
+        "cluster": 1
+      },
+      {
+        "pca_x": 2.54,
+        "pca_y": -1.49,
+        "cluster": 1
+      },
+      {
+        "pca_x": 1.89,
+        "pca_y": -1.02,
+        "cluster": 1
+      },
+      {
+        "pca_x": -0.15,
+        "pca_y": 0.08,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.03,
+        "pca_y": 0.91,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.22,
+        "pca_y": 0.75,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.92,
+        "pca_y": -0.23,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.57,
+        "pca_y": -0.08,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.92,
+        "pca_y": -0.3,
+        "cluster": 0
+      },
+      {
+        "pca_x": 2.78,
+        "pca_y": -1.67,
+        "cluster": 1
+      },
+      {
+        "pca_x": -1.83,
+        "pca_y": 0.56,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.37,
+        "pca_y": 6.76,
+        "cluster": 0
+      },
+      {
+        "pca_x": 3.18,
+        "pca_y": 2.33,
+        "cluster": 1
+      },
+      {
+        "pca_x": -0.53,
+        "pca_y": -0.73,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.7,
+        "pca_y": -0.25,
+        "cluster": 0
+      },
+      {
+        "pca_x": -2.03,
+        "pca_y": 0.57,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.07,
+        "pca_y": 0.42,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.24,
+        "pca_y": -0.14,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.45,
+        "pca_y": -0.45,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.91,
+        "pca_y": -0.39,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.18,
+        "pca_y": -0.35,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.44,
+        "pca_y": -0.11,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.04,
+        "pca_y": -0.45,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.04,
+        "pca_y": -0.72,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.24,
+        "pca_y": -0.65,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.94,
+        "pca_y": -0.65,
+        "cluster": 1
+      },
+      {
+        "pca_x": 7.12,
+        "pca_y": -2.2,
+        "cluster": 1
+      },
+      {
+        "pca_x": 1.38,
+        "pca_y": 2.3,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.31,
+        "pca_y": 0.06,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.87,
+        "pca_y": -1.28,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.64,
+        "pca_y": 0.07,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.3,
+        "pca_y": 0.27,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.46,
+        "pca_y": -1.22,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.86,
+        "pca_y": -0.26,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.14,
+        "pca_y": 0.27,
+        "cluster": 0
+      },
+      {
+        "pca_x": 3.47,
+        "pca_y": 2.07,
+        "cluster": 1
+      },
+      {
+        "pca_x": -1.26,
+        "pca_y": -0.07,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.2,
+        "pca_y": 1.01,
+        "cluster": 0
+      },
+      {
+        "pca_x": -2.13,
+        "pca_y": 0.08,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.06,
+        "pca_y": -0.42,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.68,
+        "pca_y": 0.04,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.71,
+        "pca_y": -0.06,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.05,
+        "pca_y": -0.42,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.26,
+        "pca_y": -0.25,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.71,
+        "pca_y": 0.14,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.2,
+        "pca_y": 1.35,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.9,
+        "pca_y": -0.05,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.1,
+        "pca_y": -0.17,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.31,
+        "pca_y": 0.2,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.5,
+        "pca_y": 0.36,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.42,
+        "pca_y": -0.35,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.75,
+        "pca_y": -0.21,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.43,
+        "pca_y": -0.35,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.43,
+        "pca_y": -0.7,
+        "cluster": 1
+      },
+      {
+        "pca_x": -0.11,
+        "pca_y": -0.17,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.86,
+        "pca_y": 0.58,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.1,
+        "pca_y": 0.51,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.58,
+        "pca_y": 0.03,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.89,
+        "pca_y": -0.26,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.83,
+        "pca_y": -0.1,
+        "cluster": 0
+      },
+      {
+        "pca_x": 5.44,
+        "pca_y": 6.14,
+        "cluster": 1
+      },
+      {
+        "pca_x": -1.55,
+        "pca_y": 0.42,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.18,
+        "pca_y": -0.91,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.77,
+        "pca_y": -0.34,
+        "cluster": 0
+      },
+      {
+        "pca_x": 5.13,
+        "pca_y": -0.95,
+        "cluster": 1
+      },
+      {
+        "pca_x": -0.67,
+        "pca_y": 0.15,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.75,
+        "pca_y": 0.47,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.38,
+        "pca_y": 0.52,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.62,
+        "pca_y": 0.81,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.24,
+        "pca_y": -0.14,
+        "cluster": 0
+      },
+      {
+        "pca_x": 2.4,
+        "pca_y": -1.22,
+        "cluster": 1
+      },
+      {
+        "pca_x": -0.34,
+        "pca_y": 0.49,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.89,
+        "pca_y": 0.09,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.43,
+        "pca_y": 0.13,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.33,
+        "pca_y": -0.71,
+        "cluster": 0
+      },
+      {
+        "pca_x": 3.06,
+        "pca_y": -2.52,
+        "cluster": 1
+      },
+      {
+        "pca_x": -0.56,
+        "pca_y": -0.14,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.19,
+        "pca_y": 1.07,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.17,
+        "pca_y": -0.32,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.82,
+        "pca_y": -1.3,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.85,
+        "pca_y": 0.44,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.88,
+        "pca_y": -0.38,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.96,
+        "pca_y": -0.05,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.01,
+        "pca_y": -0.75,
+        "cluster": 0
+      },
+      {
+        "pca_x": 4.07,
+        "pca_y": -3.1,
+        "cluster": 1
+      },
+      {
+        "pca_x": 2.47,
+        "pca_y": -0.29,
+        "cluster": 1
+      },
+      {
+        "pca_x": -0.11,
+        "pca_y": 0.05,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.64,
+        "pca_y": -1.18,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.01,
+        "pca_y": 0.06,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.35,
+        "pca_y": -0.02,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.23,
+        "pca_y": 0.73,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.92,
+        "pca_y": -0.3,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.22,
+        "pca_y": 0.2,
+        "cluster": 0
+      },
+      {
+        "pca_x": 2.45,
+        "pca_y": -1.62,
+        "cluster": 1
+      },
+      {
+        "pca_x": 0.97,
+        "pca_y": -1.04,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.38,
+        "pca_y": 0.39,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.82,
+        "pca_y": -0.41,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.11,
+        "pca_y": -0.14,
+        "cluster": 0
+      },
+      {
+        "pca_x": -2.09,
+        "pca_y": 0.68,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.39,
+        "pca_y": -0.56,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.6,
+        "pca_y": 0.27,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.29,
+        "pca_y": -0.3,
+        "cluster": 0
+      },
+      {
+        "pca_x": 7.78,
+        "pca_y": -3.95,
+        "cluster": 1
+      },
+      {
+        "pca_x": -1.77,
+        "pca_y": 0.13,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.09,
+        "pca_y": -0.7,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.65,
+        "pca_y": -0.88,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.1,
+        "pca_y": 0.95,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.62,
+        "pca_y": -0.47,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.01,
+        "pca_y": 0.08,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.89,
+        "pca_y": 0.3,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.72,
+        "pca_y": -0.51,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.76,
+        "pca_y": 1.39,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.77,
+        "pca_y": -0.96,
+        "cluster": 1
+      },
+      {
+        "pca_x": -0.91,
+        "pca_y": 0.05,
+        "cluster": 0
+      },
+      {
+        "pca_x": 5.35,
+        "pca_y": -3.06,
+        "cluster": 1
+      },
+      {
+        "pca_x": -1.97,
+        "pca_y": 0.45,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.92,
+        "pca_y": 0.49,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.37,
+        "pca_y": 0.17,
+        "cluster": 0
+      },
+      {
+        "pca_x": 2.98,
+        "pca_y": -1.29,
+        "cluster": 1
+      },
+      {
+        "pca_x": -0.92,
+        "pca_y": -0.3,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.4,
+        "pca_y": 0.29,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.84,
+        "pca_y": -1.82,
+        "cluster": 1
+      },
+      {
+        "pca_x": 1.45,
+        "pca_y": -0.61,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.82,
+        "pca_y": -0.29,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.51,
+        "pca_y": 0.18,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.83,
+        "pca_y": 0.2,
+        "cluster": 1
+      },
+      {
+        "pca_x": -1.22,
+        "pca_y": 0.54,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.46,
+        "pca_y": 1.95,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.03,
+        "pca_y": -0.09,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.16,
+        "pca_y": -0.12,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.38,
+        "pca_y": 0.05,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.68,
+        "pca_y": -0.25,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.0,
+        "pca_y": 0.01,
+        "cluster": 0
+      },
+      {
+        "pca_x": -2.51,
+        "pca_y": 0.61,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.75,
+        "pca_y": -0.38,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.39,
+        "pca_y": 0.84,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.92,
+        "pca_y": 0.15,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.2,
+        "pca_y": -0.68,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.45,
+        "pca_y": -0.1,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.21,
+        "pca_y": 0.04,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.45,
+        "pca_y": 0.14,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.95,
+        "pca_y": -0.1,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.59,
+        "pca_y": -0.26,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.81,
+        "pca_y": -0.12,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.7,
+        "pca_y": 0.32,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.39,
+        "pca_y": 0.07,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.69,
+        "pca_y": -0.4,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.1,
+        "pca_y": 0.09,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.36,
+        "pca_y": -0.15,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.22,
+        "pca_y": -0.41,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.01,
+        "pca_y": -0.19,
+        "cluster": 0
+      },
+      {
+        "pca_x": -2.27,
+        "pca_y": 0.58,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.3,
+        "pca_y": 0.62,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.7,
+        "pca_y": -0.4,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.62,
+        "pca_y": -1.12,
+        "cluster": 1
+      },
+      {
+        "pca_x": 3.68,
+        "pca_y": -0.64,
+        "cluster": 1
+      },
+      {
+        "pca_x": 1.21,
+        "pca_y": 0.92,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.25,
+        "pca_y": 0.89,
+        "cluster": 0
+      },
+      {
+        "pca_x": 2.76,
+        "pca_y": -2.12,
+        "cluster": 1
+      },
+      {
+        "pca_x": 0.7,
+        "pca_y": -0.32,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.64,
+        "pca_y": 0.15,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.89,
+        "pca_y": 0.65,
+        "cluster": 0
+      },
+      {
+        "pca_x": 2.18,
+        "pca_y": -1.73,
+        "cluster": 1
+      },
+      {
+        "pca_x": 2.34,
+        "pca_y": -2.05,
+        "cluster": 1
+      },
+      {
+        "pca_x": 0.76,
+        "pca_y": -1.31,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.92,
+        "pca_y": -1.02,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.2,
+        "pca_y": -1.17,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.32,
+        "pca_y": -0.2,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.87,
+        "pca_y": -0.04,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.04,
+        "pca_y": 0.02,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.81,
+        "pca_y": 0.4,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.7,
+        "pca_y": 0.47,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.67,
+        "pca_y": 1.27,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.28,
+        "pca_y": -0.84,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.54,
+        "pca_y": -0.91,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.45,
+        "pca_y": -0.95,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.95,
+        "pca_y": 0.52,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.38,
+        "pca_y": 0.61,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.45,
+        "pca_y": 0.11,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.16,
+        "pca_y": -0.48,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.45,
+        "pca_y": -0.18,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.08,
+        "pca_y": -0.49,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.65,
+        "pca_y": 0.67,
+        "cluster": 1
+      },
+      {
+        "pca_x": -0.04,
+        "pca_y": -0.1,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.85,
+        "pca_y": -0.09,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.08,
+        "pca_y": 0.48,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.99,
+        "pca_y": 0.69,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.5,
+        "pca_y": 1.32,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.1,
+        "pca_y": -1.13,
+        "cluster": 0
+      },
+      {
+        "pca_x": 6.43,
+        "pca_y": 3.02,
+        "cluster": 1
+      },
+      {
+        "pca_x": -0.87,
+        "pca_y": -0.23,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.75,
+        "pca_y": 0.05,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.84,
+        "pca_y": 0.59,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.99,
+        "pca_y": -0.31,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.96,
+        "pca_y": 0.57,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.96,
+        "pca_y": 0.13,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.19,
+        "pca_y": 0.79,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.82,
+        "pca_y": -0.12,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.03,
+        "pca_y": 0.05,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.82,
+        "pca_y": -0.48,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.29,
+        "pca_y": 0.27,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.27,
+        "pca_y": -0.69,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.67,
+        "pca_y": -0.14,
+        "cluster": 0
+      },
+      {
+        "pca_x": 2.76,
+        "pca_y": -0.58,
+        "cluster": 1
+      },
+      {
+        "pca_x": -1.18,
+        "pca_y": 0.1,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.64,
+        "pca_y": -0.14,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.05,
+        "pca_y": -0.22,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.37,
+        "pca_y": -0.44,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.69,
+        "pca_y": -0.2,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.79,
+        "pca_y": 0.31,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.95,
+        "pca_y": 0.49,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.82,
+        "pca_y": -0.01,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.12,
+        "pca_y": -0.74,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.9,
+        "pca_y": -0.8,
+        "cluster": 1
+      },
+      {
+        "pca_x": 1.06,
+        "pca_y": 4.71,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.26,
+        "pca_y": 0.35,
+        "cluster": 0
+      },
+      {
+        "pca_x": -2.33,
+        "pca_y": 0.57,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.25,
+        "pca_y": -0.49,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.67,
+        "pca_y": -0.46,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.8,
+        "pca_y": 0.44,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.81,
+        "pca_y": -1.1,
+        "cluster": 1
+      },
+      {
+        "pca_x": -1.32,
+        "pca_y": 0.12,
+        "cluster": 0
+      },
+      {
+        "pca_x": 2.86,
+        "pca_y": -1.47,
+        "cluster": 1
+      },
+      {
+        "pca_x": -1.66,
+        "pca_y": 0.31,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.84,
+        "pca_y": 0.51,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.1,
+        "pca_y": 0.94,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.88,
+        "pca_y": 0.01,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.98,
+        "pca_y": -0.01,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.1,
+        "pca_y": -0.16,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.07,
+        "pca_y": 0.46,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.55,
+        "pca_y": -0.07,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.35,
+        "pca_y": -0.1,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.55,
+        "pca_y": 0.96,
+        "cluster": 1
+      },
+      {
+        "pca_x": -1.68,
+        "pca_y": 0.53,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.66,
+        "pca_y": 0.4,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.19,
+        "pca_y": -2.9,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.71,
+        "pca_y": -0.65,
+        "cluster": 1
+      },
+      {
+        "pca_x": -0.99,
+        "pca_y": -0.32,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.94,
+        "pca_y": 0.36,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.58,
+        "pca_y": 0.43,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.77,
+        "pca_y": 0.24,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.35,
+        "pca_y": -0.25,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.57,
+        "pca_y": -0.05,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.7,
+        "pca_y": 0.08,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.51,
+        "pca_y": 0.06,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.05,
+        "pca_y": 0.05,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.5,
+        "pca_y": -0.22,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.88,
+        "pca_y": 0.35,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.16,
+        "pca_y": 0.02,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.56,
+        "pca_y": -0.7,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.49,
+        "pca_y": 0.38,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.1,
+        "pca_y": 0.05,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.6,
+        "pca_y": -0.01,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.89,
+        "pca_y": 0.01,
+        "cluster": 0
+      },
+      {
+        "pca_x": 4.58,
+        "pca_y": 3.02,
+        "cluster": 1
+      },
+      {
+        "pca_x": -0.88,
+        "pca_y": 0.47,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.53,
+        "pca_y": -0.47,
+        "cluster": 0
+      },
+      {
+        "pca_x": 4.63,
+        "pca_y": 2.21,
+        "cluster": 1
+      },
+      {
+        "pca_x": -0.07,
+        "pca_y": 1.04,
+        "cluster": 0
+      },
+      {
+        "pca_x": -2.17,
+        "pca_y": 0.56,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.54,
+        "pca_y": -0.17,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.71,
+        "pca_y": -0.12,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.47,
+        "pca_y": 0.2,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.45,
+        "pca_y": -0.51,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.98,
+        "pca_y": 0.25,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.86,
+        "pca_y": -0.33,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.3,
+        "pca_y": 0.32,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.06,
+        "pca_y": -0.4,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.46,
+        "pca_y": -0.03,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.27,
+        "pca_y": 0.49,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.34,
+        "pca_y": 0.34,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.29,
+        "pca_y": -0.11,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.89,
+        "pca_y": 0.88,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.15,
+        "pca_y": 1.36,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.63,
+        "pca_y": -0.48,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.83,
+        "pca_y": -0.18,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.15,
+        "pca_y": -0.15,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.73,
+        "pca_y": -0.4,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.37,
+        "pca_y": 1.1,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.09,
+        "pca_y": 0.08,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.03,
+        "pca_y": 1.25,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.29,
+        "pca_y": 0.11,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.19,
+        "pca_y": -0.28,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.32,
+        "pca_y": -0.73,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.42,
+        "pca_y": 0.11,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.72,
+        "pca_y": 0.11,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.21,
+        "pca_y": -0.06,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.36,
+        "pca_y": -0.69,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.0,
+        "pca_y": -0.02,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.07,
+        "pca_y": 0.56,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.65,
+        "pca_y": -0.13,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.11,
+        "pca_y": 2.15,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.38,
+        "pca_y": -0.93,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.82,
+        "pca_y": 0.43,
+        "cluster": 0
+      },
+      {
+        "pca_x": 5.0,
+        "pca_y": 2.89,
+        "cluster": 1
+      },
+      {
+        "pca_x": -0.33,
+        "pca_y": -0.09,
+        "cluster": 0
+      },
+      {
+        "pca_x": 2.39,
+        "pca_y": 2.52,
+        "cluster": 1
+      },
+      {
+        "pca_x": -2.06,
+        "pca_y": 0.46,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.72,
+        "pca_y": 0.4,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.37,
+        "pca_y": -0.32,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.54,
+        "pca_y": 0.53,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.54,
+        "pca_y": 0.6,
+        "cluster": 0
+      },
+      {
+        "pca_x": -2.29,
+        "pca_y": 0.61,
+        "cluster": 0
+      },
+      {
+        "pca_x": 3.92,
+        "pca_y": 16.57,
+        "cluster": 1
+      },
+      {
+        "pca_x": -0.08,
+        "pca_y": -0.17,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.32,
+        "pca_y": -1.26,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.99,
+        "pca_y": -0.03,
+        "cluster": 1
+      },
+      {
+        "pca_x": -0.84,
+        "pca_y": 0.07,
+        "cluster": 0
+      },
+      {
+        "pca_x": -2.34,
+        "pca_y": 0.6,
+        "cluster": 0
+      },
+      {
+        "pca_x": 7.18,
+        "pca_y": 2.76,
+        "cluster": 1
+      },
+      {
+        "pca_x": 1.1,
+        "pca_y": -0.19,
+        "cluster": 0
+      },
+      {
+        "pca_x": 2.01,
+        "pca_y": -1.89,
+        "cluster": 1
+      },
+      {
+        "pca_x": -0.88,
+        "pca_y": 0.19,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.7,
+        "pca_y": 0.42,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.68,
+        "pca_y": 0.25,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.98,
+        "pca_y": 1.44,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.06,
+        "pca_y": 0.33,
+        "cluster": 0
+      },
+      {
+        "pca_x": 2.12,
+        "pca_y": -0.16,
+        "cluster": 1
+      },
+      {
+        "pca_x": -0.89,
+        "pca_y": 0.02,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.91,
+        "pca_y": 0.36,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.81,
+        "pca_y": -0.45,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.17,
+        "pca_y": -0.28,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.81,
+        "pca_y": 0.39,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.31,
+        "pca_y": -0.5,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.25,
+        "pca_y": -1.13,
+        "cluster": 0
+      },
+      {
+        "pca_x": 3.76,
+        "pca_y": -2.58,
+        "cluster": 1
+      },
+      {
+        "pca_x": -0.91,
+        "pca_y": -0.3,
+        "cluster": 0
+      },
+      {
+        "pca_x": -2.46,
+        "pca_y": 0.66,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.83,
+        "pca_y": 0.01,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.4,
+        "pca_y": -0.79,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.46,
+        "pca_y": -0.52,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.68,
+        "pca_y": -0.0,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.74,
+        "pca_y": 0.35,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.89,
+        "pca_y": -0.26,
+        "cluster": 0
+      },
+      {
+        "pca_x": -2.24,
+        "pca_y": 0.47,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.13,
+        "pca_y": -0.02,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.33,
+        "pca_y": 0.19,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.81,
+        "pca_y": 0.41,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.92,
+        "pca_y": -0.3,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.13,
+        "pca_y": -0.25,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.39,
+        "pca_y": 0.3,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.44,
+        "pca_y": -0.08,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.78,
+        "pca_y": 0.11,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.53,
+        "pca_y": -0.36,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.18,
+        "pca_y": 0.35,
+        "cluster": 0
+      },
+      {
+        "pca_x": 1.38,
+        "pca_y": -1.36,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.35,
+        "pca_y": 0.02,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.39,
+        "pca_y": 0.57,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.04,
+        "pca_y": -0.15,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.61,
+        "pca_y": 0.24,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.24,
+        "pca_y": 0.36,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.86,
+        "pca_y": -0.01,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.24,
+        "pca_y": -0.14,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.57,
+        "pca_y": 0.28,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.08,
+        "pca_y": -0.2,
+        "cluster": 0
+      },
+      {
+        "pca_x": -0.89,
+        "pca_y": 0.02,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.06,
+        "pca_y": -0.16,
+        "cluster": 0
+      },
+      {
+        "pca_x": 0.08,
+        "pca_y": -0.06,
+        "cluster": 0
+      },
+      {
+        "pca_x": -1.18,
+        "pca_y": -0.03,
+        "cluster": 0
+      }
+    ],
+    "charts": [
+      "cluster_pca_scatter.png"
+    ]
+  },
+  "anomalies": {
+    "status": "success",
+    "total_anomalies_detected": 844,
+    "contamination_rate": 0.03,
+    "anomalies": [
+      {
+        "date": "2015-01-07",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.025,
+        "PM2.5": null,
+        "PM10": null,
+        "NO": 112.16,
+        "NO2": 40.62,
+        "NOx": 130.77,
+        "NH3": null,
+        "SO2": 32.28,
+        "CO": 112.16,
+        "O3": 33.47,
+        "Benzene": 0.0,
+        "Toluene": 0.0,
+        "Xylene": 0.0
+      },
+      {
+        "date": "2015-01-08",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.013,
+        "PM2.5": null,
+        "PM10": null,
+        "NO": 80.87,
+        "NO2": 36.74,
+        "NOx": 96.75,
+        "NH3": null,
+        "SO2": 38.54,
+        "CO": 80.87,
+        "O3": 31.89,
+        "Benzene": 0.0,
+        "Toluene": 0.0,
+        "Xylene": 0.0
+      },
+      {
+        "date": "2015-01-11",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.018,
+        "PM2.5": null,
+        "PM10": null,
+        "NO": 132.07,
+        "NO2": 55.8,
+        "NOx": 24.53,
+        "NH3": null,
+        "SO2": 25.03,
+        "CO": 132.07,
+        "O3": 6.79,
+        "Benzene": 0.0,
+        "Toluene": 0.0,
+        "Xylene": 0.0
+      },
+      {
+        "date": "2015-01-12",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.006,
+        "PM2.5": null,
+        "PM10": null,
+        "NO": 52.04,
+        "NO2": 40.67,
+        "NOx": 90.24,
+        "NH3": null,
+        "SO2": 51.84,
+        "CO": 52.04,
+        "O3": 45.89,
+        "Benzene": 2.41,
+        "Toluene": 0.03,
+        "Xylene": 7.88
+      },
+      {
+        "date": "2015-01-13",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.02,
+        "PM2.5": null,
+        "PM10": null,
+        "NO": 48.82,
+        "NO2": 44.2,
+        "NOx": 87.09,
+        "NH3": null,
+        "SO2": 68.21,
+        "CO": 48.82,
+        "O3": 35.16,
+        "Benzene": 9.45,
+        "Toluene": 13.35,
+        "Xylene": 12.5
+      },
+      {
+        "date": "2015-02-01",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.075,
+        "PM2.5": 135.99,
+        "PM10": null,
+        "NO": 43.48,
+        "NO2": 42.08,
+        "NOx": 84.57,
+        "NH3": null,
+        "SO2": 75.23,
+        "CO": 43.48,
+        "O3": 102.7,
+        "Benzene": 0.4,
+        "Toluene": 0.04,
+        "Xylene": 25.87
+      },
+      {
+        "date": "2015-02-02",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.096,
+        "PM2.5": 178.33,
+        "PM10": null,
+        "NO": 54.56,
+        "NO2": 35.31,
+        "NOx": 72.8,
+        "NH3": null,
+        "SO2": 55.04,
+        "CO": 54.56,
+        "O3": 107.38,
+        "Benzene": 0.46,
+        "Toluene": 0.06,
+        "Xylene": 35.61
+      },
+      {
+        "date": "2015-02-14",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.051,
+        "PM2.5": 177.33,
+        "PM10": null,
+        "NO": 37.49,
+        "NO2": 47.58,
+        "NOx": 77.85,
+        "NH3": null,
+        "SO2": 99.72,
+        "CO": 37.49,
+        "O3": 36.47,
+        "Benzene": 17.0,
+        "Toluene": 52.66,
+        "Xylene": 6.98
+      },
+      {
+        "date": "2015-02-20",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.039,
+        "PM2.5": 140.29,
+        "PM10": null,
+        "NO": 33.84,
+        "NO2": 36.14,
+        "NOx": 68.85,
+        "NH3": null,
+        "SO2": 101.53,
+        "CO": 33.84,
+        "O3": 40.98,
+        "Benzene": 20.12,
+        "Toluene": 43.51,
+        "Xylene": 7.48
+      },
+      {
+        "date": "2015-02-21",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.115,
+        "PM2.5": 239.96,
+        "PM10": null,
+        "NO": 61.95,
+        "NO2": 46.25,
+        "NOx": 106.92,
+        "NH3": null,
+        "SO2": 84.87,
+        "CO": 61.95,
+        "O3": 33.55,
+        "Benzene": 22.14,
+        "Toluene": 53.98,
+        "Xylene": 15.44
+      },
+      {
+        "date": "2015-02-22",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.008,
+        "PM2.5": 142.96,
+        "PM10": null,
+        "NO": 45.45,
+        "NO2": 48.21,
+        "NOx": 92.32,
+        "NH3": null,
+        "SO2": 62.96,
+        "CO": 45.45,
+        "O3": 34.77,
+        "Benzene": 7.35,
+        "Toluene": 22.4,
+        "Xylene": 8.47
+      },
+      {
+        "date": "2015-02-23",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.178,
+        "PM2.5": 238.41,
+        "PM10": null,
+        "NO": 77.7,
+        "NO2": 55.07,
+        "NOx": 131.32,
+        "NH3": null,
+        "SO2": 89.07,
+        "CO": 77.7,
+        "O3": 37.3,
+        "Benzene": 50.61,
+        "Toluene": 163.64,
+        "Xylene": 28.46
+      },
+      {
+        "date": "2015-03-05",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.021,
+        "PM2.5": 173.01,
+        "PM10": null,
+        "NO": 48.44,
+        "NO2": 42.27,
+        "NOx": 90.73,
+        "NH3": null,
+        "SO2": 78.76,
+        "CO": 48.44,
+        "O3": 59.39,
+        "Benzene": 9.72,
+        "Toluene": 9.96,
+        "Xylene": 4.13
+      },
+      {
+        "date": "2015-03-19",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.07,
+        "PM2.5": 105.06,
+        "PM10": null,
+        "NO": 46.24,
+        "NO2": 37.05,
+        "NOx": 82.23,
+        "NH3": null,
+        "SO2": 53.62,
+        "CO": 46.24,
+        "O3": 45.65,
+        "Benzene": 20.89,
+        "Toluene": 75.36,
+        "Xylene": 12.7
+      },
+      {
+        "date": "2015-03-21",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.013,
+        "PM2.5": 111.89,
+        "PM10": null,
+        "NO": 22.25,
+        "NO2": 43.29,
+        "NOx": 64.53,
+        "NH3": null,
+        "SO2": 66.44,
+        "CO": 22.25,
+        "O3": 50.57,
+        "Benzene": 18.03,
+        "Toluene": 56.86,
+        "Xylene": 8.86
+      },
+      {
+        "date": "2015-03-23",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.093,
+        "PM2.5": 130.76,
+        "PM10": null,
+        "NO": 45.61,
+        "NO2": 41.03,
+        "NOx": 85.76,
+        "NH3": null,
+        "SO2": 65.77,
+        "CO": 45.61,
+        "O3": 41.58,
+        "Benzene": 24.12,
+        "Toluene": 85.31,
+        "Xylene": 12.56
+      },
+      {
+        "date": "2015-03-24",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.017,
+        "PM2.5": 143.55,
+        "PM10": null,
+        "NO": 27.3,
+        "NO2": 31.15,
+        "NOx": 57.16,
+        "NH3": null,
+        "SO2": 50.98,
+        "CO": 27.3,
+        "O3": 35.38,
+        "Benzene": 18.61,
+        "Toluene": 72.78,
+        "Xylene": 10.15
+      },
+      {
+        "date": "2015-03-25",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.042,
+        "PM2.5": 165.07,
+        "PM10": null,
+        "NO": 23.83,
+        "NO2": 34.48,
+        "NOx": 57.71,
+        "NH3": null,
+        "SO2": 64.32,
+        "CO": 23.83,
+        "O3": 43.79,
+        "Benzene": 29.14,
+        "Toluene": 64.01,
+        "Xylene": 8.51
+      },
+      {
+        "date": "2015-03-26",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.045,
+        "PM2.5": 166.85,
+        "PM10": null,
+        "NO": 17.93,
+        "NO2": 43.3,
+        "NOx": 60.07,
+        "NH3": null,
+        "SO2": 79.71,
+        "CO": 17.93,
+        "O3": 53.44,
+        "Benzene": 24.09,
+        "Toluene": 67.38,
+        "Xylene": 9.76
+      },
+      {
+        "date": "2015-05-16",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.013,
+        "PM2.5": 129.58,
+        "PM10": null,
+        "NO": 21.23,
+        "NO2": 28.79,
+        "NOx": 45.4,
+        "NH3": null,
+        "SO2": 17.66,
+        "CO": 21.23,
+        "O3": 34.42,
+        "Benzene": 20.53,
+        "Toluene": 85.73,
+        "Xylene": 11.56
+      },
+      {
+        "date": "2015-10-02",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.038,
+        "PM2.5": 102.49,
+        "PM10": null,
+        "NO": 33.31,
+        "NO2": 37.85,
+        "NOx": 71.17,
+        "NH3": null,
+        "SO2": 27.32,
+        "CO": 33.31,
+        "O3": 24.85,
+        "Benzene": 19.81,
+        "Toluene": 51.29,
+        "Xylene": 15.05
+      },
+      {
+        "date": "2015-10-17",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.005,
+        "PM2.5": 145.75,
+        "PM10": null,
+        "NO": 20.61,
+        "NO2": 34.71,
+        "NOx": 55.33,
+        "NH3": null,
+        "SO2": 24.66,
+        "CO": 20.61,
+        "O3": 95.94,
+        "Benzene": 20.08,
+        "Toluene": 51.51,
+        "Xylene": 7.31
+      },
+      {
+        "date": "2015-10-18",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.129,
+        "PM2.5": 179.43,
+        "PM10": null,
+        "NO": 52.33,
+        "NO2": 39.42,
+        "NOx": 91.75,
+        "NH3": null,
+        "SO2": 39.15,
+        "CO": 52.33,
+        "O3": 112.01,
+        "Benzene": 31.75,
+        "Toluene": 102.65,
+        "Xylene": 14.97
+      },
+      {
+        "date": "2015-10-26",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.133,
+        "PM2.5": 206.89,
+        "PM10": null,
+        "NO": 145.32,
+        "NO2": 55.67,
+        "NOx": 201.0,
+        "NH3": null,
+        "SO2": 20.47,
+        "CO": 145.32,
+        "O3": 38.0,
+        "Benzene": 1.69,
+        "Toluene": 3.45,
+        "Xylene": 36.0
+      },
+      {
+        "date": "2015-10-27",
+        "city": "Ahmedabad",
+        "anomaly_score": -0.055,
+        "PM2.5": 114.84,
+        "PM10": null,
+        "NO": 38.09,
+        "NO2": 40.31,
+        "NOx": 78.39,
+        "NH3": null,
+        "SO2": 22.94,
+        "CO": 38.09,
+        "O3": 30.19,
+        "Benzene": 26.0,
+        "Toluene": 72.61,
+        "Xylene": 10.84
+      }
+    ]
+  }
+}
